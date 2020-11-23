@@ -6,6 +6,7 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'arcticicestudio/nord-vim'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -25,8 +26,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+colorscheme nord
 " plugin configs
 source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/gruvbox.vim
+" source $HOME/.config/nvim/plug-config/gruvbox.vim
 source $HOME/.config/nvim/plug-config/airline.vim
-" autocmd vimenter * ++nested colorscheme nord
+source $HOME/.config/nvim/plug-config/vimtex.vim
